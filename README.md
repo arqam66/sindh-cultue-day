@@ -31,9 +31,6 @@ This is a website dedicated to **Sindh Culture Day**, showcasing the rich herita
 ## 📜 License
 This project is open-source and available under the **MIT License**.
 
-## 📧 Contact
-For any queries or contributions, feel free to reach out:
-- **Email**: your-email@example.com
-- **GitHub**: [YourGitHubProfile](https://github.com/yourusername)
+
 
 Enjoy exploring Sindhi culture! 🎉
