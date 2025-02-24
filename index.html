@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سندھ ثقافتی دن مبارک</title>
+    <link rel="icon" href="/937213_ODE04M0-modified.png" type="image/jpg" sizes="any">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Jameel Noori Nastaleeq', 'Nafees Web Naskh', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f3e6;
+            color: #333;
+            line-height: 1.6;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5C16.2 5 5 16.2 5 30s11.2 25 25 25 25-11.2 25-25S43.8 5 30 5zm0 5c11 0 20 9 20 20s-9 20-20 20-20-9-20-20 9-20 20-20z' fill='%23d32f2f' fill-opacity='0.05'/%3E%3C/svg%3E");
+            direction: rtl;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #8b0000 0%, #d32f2f 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M11 18c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM51 18c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM91 18c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 58c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM51 58c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM91 58c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 98c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM51 98c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM91 98c3.3 0 6-2.7 6-6s-2.7-6-6-6-6 2.7-6 6 2.7 6 6 6zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            z-index: 1;
+        }
+        
+        header .content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        .date {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        
+        .topi-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 60px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 30px 30px 0 0;
+            opacity: 0.3;
+        }
+        
+        .message-card {
+            background-color: white;
+            border-radius: 0 0 10px 10px;
+            padding: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%238b0000' fill-opacity='0.03'/%3E%3C/svg%3E");
+            border: 1px solid #e0d5c5;
+        }
+        
+        .message-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(90deg, #8b0000, #d32f2f, #ff7043, #8b0000);
+            background-size: 300% 100%;
+            animation: gradient-animation 6s ease infinite;
+        }
+        
+        @keyframes gradient-animation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        
+        .ajrak-border {
+            border: 15px solid transparent;
+            border-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%238b0000' fill-opacity='0.5'%3E%3Cpath d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L0 52V8zm0 4L52 0h2L0 56v-4zm0 4L56 0h2L0 60v-4zm0 4L60 0h2L0 64v-4zm0 4L64 0h2L0 68v-4zm0 4L68 0h2L0 72v-4zm0 4L72 0h2L0 76v-4zm0 4L76 0h4v4L4 76H0v-4zm4 0L80 0v4L8 76H4v-4zm4 0L80 4v4L12 76H8v-4zm4 0L80 8v4L16 76h-4v-4zm4 0L80 12v4L20 76h-4v-4zm4 0L80 16v4L24 76h-4v-4zm4 0L80 20v4L28 76h-4v-4zm4 0L80 24v4L32 76h-4v-4zm4 0L80 28v4L36 76h-4v-4zm4 0L80 32v4L40 76h-4v-4zm4 0L80 36v4L44 76h-4v-4zm4 0L80 40v4L48 76h-4v-4zm4 0L80 44v4L52 76h-4v-4zm4 0L80 48v4L56 76h-4v-4zm4 0L80 52v4L60 76h-4v-4zm4 0L80 56v4L64 76h-4v-4zm4 0L80 60v4L68 76h-4v-4zm4 0L80 64v4L72 76h-4v-4zm4 0L80 68v4L76 76h-4v-4zm4 0L80 72v8h-8L76 76h-4v-4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            border-image-slice: 15;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .photo-container {
+            text-align: center;
+            margin: 0 0 20px 0;
+        }
+        
+        .photo-frame {
+            display: inline-block;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transform: rotate(2deg);
+            position: relative;
+        }
+        
+        .photo-frame::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #8b0000;
+            opacity: 0.3;
+            z-index: 1;
+        }
+        
+        .photo {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            transform: rotate(-2deg);
+            border: 1px solid #e0d5c5;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .message-text {
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        
+        .message-text p {
+            margin-bottom: 15px;
+        }
+        
+        .sindhi-greeting {
+            text-align: center;
+            font-size: 2rem;
+            color: #8b0000;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .signature {
+            text-align: left;
+            margin-top: 40px;
+            position: relative;
+        }
+        
+        .signature::after {
+            content: "";
+            display: block;
+            width: 150px;
+            height: 1px;
+            background-color: #8b0000;
+            margin-right: auto;
+            margin-top: 5px;
+            opacity: 0.5;
+        }
+        
+        .quote {
+            font-style: italic;
+            color: #8b0000;
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            border-right: 3px solid #8b0000;
+            border-left: 3px solid #8b0000;
+            background-color: #fff9f9;
+            position: relative;
+        }
+        
+        .quote::before, .quote::after {
+            content: '"';
+            font-size: 60px;
+            color: rgba(139, 0, 0, 0.1);
+            position: absolute;
+            line-height: 0;
+        }
+        
+        .quote::before {
+            top: 30px;
+            right: 10px;
+        }
+        
+        .quote::after {
+            bottom: 0;
+            left: 10px;
+        }
+        
+        .decorative-element {
+            text-align: center;
+            margin: 20px 0;
+            color: #8b0000;
+            font-size: 24px;
+        }
+        
+        .ajrak-pattern {
+            height: 30px;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='30' viewBox='0 0 60 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h15v15H0z' fill='%238b0000' fill-opacity='0.2'/%3E%3Cpath d='M15 0h15v15H15z' fill='%23d32f2f' fill-opacity='0.2'/%3E%3Cpath d='M30 0h15v15H30z' fill='%238b0000' fill-opacity='0.2'/%3E%3Cpath d='M45 0h15v15H45z' fill='%23d32f2f' fill-opacity='0.2'/%3E%3Cpath d='M0 15h15v15H0z' fill='%23d32f2f' fill-opacity='0.2'/%3E%3Cpath d='M15 15h15v15H15z' fill='%238b0000' fill-opacity='0.2'/%3E%3Cpath d='M30 15h15v15H30z' fill='%23d32f2f' fill-opacity='0.2'/%3E%3Cpath d='M45 15h15v15H45z' fill='%238b0000' fill-opacity='0.2'/%3E%3C/svg%3E");
+            margin: 30px 0;
+            border-radius: 3px;
+        }
+        
+        .sindhi-design {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .sindhi-design .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #d32f2f 0%, #8b0000 100%);
+            margin: 0 10px;
+            position: relative;
+        }
+        
+        .sindhi-design .circle::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 50%;
+            border: 2px dotted rgba(255, 255, 255, 0.7);
+        }
+        
+        .sindhi-design .line {
+            height: 2px;
+            width: 80px;
+            background-color: #8b0000;
+            margin-top: 14px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #8b0000;
+            font-size: 0.9rem;
+            padding: 15px;
+            background-color: rgba(139, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+  
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header {
+                padding: 30px 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .message-card {
+                padding: 25px 15px;
+            }
+            
+            .sindhi-design .line {
+                width: 40px;
+            }
+        }
+        .topi-icon {
+    /* Add your icon styling here */
+}
+
+.content {
+    text-align: center;
+    font-family: 'Nastaliq', sans-serif;
+}
+
+h1 {
+    color: #f1f1f1;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #ffe1e9;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.highlight {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="topi-icon"></div>
+            <div class="content">
+                <h1>سندھ ثقافت پر خصوصی پیغام</h1>
+            </div>
+        </header>
+        
+        <div class="message-card">
+            <div class="ajrak-pattern"></div>
+            
+            <div class="sindhi-greeting">زندہ باد سندھ کی ثقافت!</div>
+            
+            <div class="photo-container">
+                <div class="photo-frame">
+                    <img src="/IMG_20240106_141453.jpg" alt="سندھ ثقافتی دن کی تقریب" class="photo">
+                </div>
+            </div>
+            
+            <div class="sindhi-design">
+                <div class="line"></div>
+                <div class="circle"></div>
+                <div class="line"></div>
+            </div>
+            
+            <div class="ajrak-border">
+                <div class="message-text">
+                    <p>عزیز دوست،</p>
+                    
+                    <p>سندھ ثقافتی دن کے اس مبارک موقع پر، میں آپ کو اپنی گرمجوشیاں اور گہری قدر کے احساسات بھیجنا چاہتا ہوں۔ آپ ہماری سندھی وراثت کو سنبھالنے اور پروان چڑھانے میں اہم کردار ادا کر رہے ہیں۔</p>
+                    
+                    <p>آپ کی ثقافتی روایات کے لیے لگن حوصلہ افزا ہے۔ چاہے وہ اجرک اور ٹوپی کی نمائش ہو، سندھی شاعری کو بانٹنا ہو، یا نئی نسل تک رسوم پہنچانا ہو، آپ سندھ کی روح کی عکاسی کرتے ہیں۔</p>
+                    
+                    <p>آپ کی کوششیں سندھی ثقافت کی خوبصورتی اور حکمت کو زندہ رکھنے کا ذریعہ ہیں۔ شاہ عبداللطیف بھٹائی کی شاعری اور ہماری رنگارنگ تقریبات کو زندہ رکھنے میں آپ کا کردار قابلِ تعریف ہے۔</p>
+                </div>
+            </div>
+            
+            <div class="quote">
+    سندھ کی مٹی کی خوشبو، اس کے شاعروں کی حکمت، اور اس کے لوگوں کی گرمجوشی ہمیشہ ان کے دلوں میں رہے گی جو انہیں سچے دل سے عزیز رکھتے ہیں۔
+</div>
+            <div class="sindhi-design">
+                <div class="circle"></div>
+                <div class="line"></div>
+                <div class="circle"></div>
+                <div class="line"></div>
+                <div class="circle"></div>
+            </div>
+            
+            <div class="message-text">
+                <p>آج، جب ہزاروں لوگ سندھ اور دنیا بھر میں ثقافتی فخر کی نمائش میں اکٹھے ہوتے ہیں، مجھے یاد آتا ہے کہ میں کتنا خوش قسمت ہوں کہ یہ وراثت آپ جیسے وقف شدہ شخص کے ساتھ بانٹ سکتا ہوں۔ آپ کا ہماری تاریخ کا علم، آپ کا ہمارے فنون کی قدر، اور آپ کا سندھی مہمان نوازی، حکمت، اور ہم آہنگی کی اقدار کو ظاہر کرنا آپ کو ایک سچا ثقافتی سفیر بناتا ہے۔</p>
+                
+                <p>امید ہے کہ یہ سندھ ثقافتی دن آپ کو خوشی، رابطہ، اور نئی شروعات لائے۔ دھمال رقص کی لے آپ کی روح کو بڑھائے، سندھی موسیقی کے لہجے آپ کے دل کو چھوئیں، اور ہماری ثقافتی قالین کے چمکتے رنگ آپ کی زندگی کو روشن کرتے رہیں۔</p>
+                
+                <div class="decorative-element">✽ ✽ ✽</div>
+                
+            </div>
+            
+            <div class="ajrak-pattern"></div>
+        </div>
+        
+        <footer>
+            <p style="color: #000000; font-size: 19px;">
+                زندہ باد سندھ | ہماری امیر ثقافتی وراثت کی پرورش | تھر سے ٹکر تک آباد رہے سندھ ہماری
+            </p>            
+        </footer>
+    </div>
+</body>
+</html>
